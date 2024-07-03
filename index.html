@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FALCON</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  </head>
+   
+
+  <body>
+    <div class="flex min-h-screen items-center justify-center bg-gray-300 p-8">
+      
+      <div class="relative flex h-96 w-70 flex-col rounded-md bg-white p-4 shadow-2xl">
+       
+
+        <div class="flex justify-center">
+          <img id="img" class="h-24 rounded-3xl w-15 text-center mt-1 mb-5" src="https://cdn4.vectorstock.com/i/1000x1000/18/83/web-developer-design-vector-5881883.jpg" alt="here" />
+        </div>
+
+        <div class="text-center mb-1">
+          <label class="mt-3 text-2xl ml-1 animate__animated animate__backInLeft font-bold" for="">Enter Name</label>
+        </div> 
+
+
+        <div class="flex justify-center">
+          <input id="password" type="text" class="h-10 
+         hover:border-blue-300 mt-1 w-64 border p-1 transition transform focus:border-blue-5a0 focus:scale-105 outline-none rounded-md" placeholder="Enter name" />
+        </div>
+
+        <div  class="text-xs mt-2 ml-3 font-mono">The Name must contain:</div>
+        <div id="letters" class="text-xs ml-5 mt-1 font-mono">Atleast 8 letters.</div>
+        <div id="number" class="text-xs ml-5 font-mono">Atleast a number and letter.</div>
+        <div id="special"  class="text-xs ml-5 font-mono">Atleast a special character.</div>
+        
+
+         <button class="absolute bottom-2 right-3 rounded-sm bg-blue-500 px-2 py-1 transition transform hover:bg-blue-400  focus:scale-105 focus:outline-none focus:rounded-lg font-semibold" onclick="next_page()" >Submit</button>
+      </div>
+      <!-- Content goes here -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>
